@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('image.jpg');
+    padding: 10px;
+}
+.container1{
+    width: 100%;
+    max-width: 500px;
+    background: rgba(127, 246, 255, 0.338);
+    margin: 100px auto 20px;
+    padding: 30px 30px 30px;
+    border-radius: 10px;
+}
+.container1 h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 20px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background: orange;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 10px 10px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0px 0px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: white;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 10px;
+}   
+ul li.linethrough{
+    color: red;
+    text-decoration: line-through;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    color: red;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
