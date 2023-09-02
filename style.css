@@ -60,10 +60,6 @@ ul li{
     background: white;
 }
 ul li::before{
-    content: '';
-    position: absolute;
-    height: 30px;
-    width: 30px;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
